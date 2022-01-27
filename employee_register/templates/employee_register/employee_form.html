@@ -20,8 +20,16 @@
         </div>
     </div>
 
-    <button type="submit" class="btn btn-success" style="background-color: rgb(0, 255, 85); color: rgb(252, 0, 0); font-weight: bold;"><i class="fa fa-database"></i>Submit</button>
+    <div class="row">
+        <div class="col-md-8">
+            <button type="submit" class="btn btn-success btn-block btn-lg" style="background-color: rgb(0, 255, 85); color: rgb(252, 0, 0); font-weight: bold;"><i class="fa fa-database"></i>Submit</button>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'employee_list'%}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fa fa-home"></i>Home
+            </a>
+        </div>
+    </div>
 </form>
-
 </div>
 {% endblock content %}
