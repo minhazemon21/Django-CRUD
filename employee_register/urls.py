@@ -6,5 +6,6 @@ urlpatterns = [
     path('delete/<int:id>/', views.employee_delete, name='employee_delete'), #delete 
     path('list/', views.employee_list, name='employee_list'), #display record
     path('test/', views.test),
+    path('time/', views.time),
 
 ]

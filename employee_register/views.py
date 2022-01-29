@@ -7,6 +7,7 @@ from .forms import EmployeeForm
 #from . forms import EmployeeForm
 #from django.forms import EmployeeForm
 from .models import Employee
+import datetime
  
 
 # Create your views here.
@@ -43,3 +44,9 @@ def employee_delete(request,id):
 
 def test(request):
     return render(request, "employee_register/test.html")
+
+
+def time(request):
+    now = datetime.datetime.now()  
+    html = "<html><body><h3>Now time is %s.</h3></body></html>" % now  
+    return HttpResponse(html)    # rendering the template in HttpResponse
