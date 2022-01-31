@@ -50,3 +50,6 @@ def time(request):
     now = datetime.datetime.now()  
     html = "<html><body><h3>Now time is %s.</h3></body></html>" % now  
     return HttpResponse(html)    # rendering the template in HttpResponse
+
+def index(request):
+    return render(request, "employee_register/index.html")

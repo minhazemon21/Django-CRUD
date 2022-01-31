@@ -7,5 +7,6 @@ urlpatterns = [
     path('list/', views.employee_list, name='employee_list'), #display record
     path('test/', views.test),
     path('time/', views.time),
+    path('index/', views.index), #This is index
 
 ]
