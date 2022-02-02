@@ -8,5 +8,6 @@ urlpatterns = [
     path('test/', views.test),
     path('time/', views.time),
     path('index/', views.index), #This is index
+    path('error/', views.employee_error),
 
 ]

@@ -9,9 +9,13 @@ class EmployeeForm(forms.ModelForm):
         fields = ('emp_code','fullname', 'mobile','position')
         labels = {
             'fullname': 'Full Name',
-            'emp_code': 'Emp. Code'
+            'emp_code': 'Emp. Code',
+            'mobile': 'Mobile Number'
         }
+
     def __init__(self, *args, **kwargs):
         super(EmployeeForm,self).__init__(*args, **kwargs)
         self.fields['position'].empty_label = 'Select'
         self.fields['emp_code'].required = False
+        self.fields['mobile'].required = False
+

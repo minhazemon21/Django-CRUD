@@ -1,3 +1,4 @@
+from cgitb import html
 from django.forms import forms
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
@@ -53,3 +54,9 @@ def time(request):
 
 def index(request):
     return render(request, "employee_register/index.html")
+
+def employee_error(request):
+   #html = "<html><body><h1>Error Page please check again</h1><br> <a href='/employee'>Back To Home</a></body></html>"
+    #return HttpResponse(html)
+    return render(request, "employee_register/error.html")
+
