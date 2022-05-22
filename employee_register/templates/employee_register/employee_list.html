@@ -2,12 +2,20 @@
 
 
 {% block content %}
+<style>
+    tr:nth-child(even) {background-color: #d61a1a;}
+    tr:nth-child(odd) {background-color: #e7eb13;}
+    /* tr:nth-child(){background-color: aquamarine;} */
+    /* thead{background-color: aquamarine !important;} */
+    
+    
+</style>
 
 <p>We will show employee list</p>
 
 <table class="table table-border">
     <thead class="border-bottom font-weight-bold">
-        <tr>
+        <tr style="background-color: aquamarine !important">
             <td>Full Name</td>
             <td>Mobile Number</td>
             <td>Employee Code</td>
